@@ -122,3 +122,18 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Hide scrollbar by default, show on hover */
+.scrollbar-hover {
+  scrollbar-width: thin; 
+}
+
+/* .scrollbar-hover::-webkit-scrollbar {
+  width: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scrollbar-hover:hover::-webkit-scrollbar {
+  opacity: 1;
+} */

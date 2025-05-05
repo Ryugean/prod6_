@@ -11,6 +11,7 @@ import {
   UserButton,
 } from '@clerk/nextjs'
 import AuthMessage from "@/components/AuthMsg";
+import { Toaster } from "sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,6 +44,7 @@ export default function RootLayout({
           <AuthMessage />
           <SignedIn>
             {children}
+            <Toaster />
           </SignedIn>
         </body>
       </html>
