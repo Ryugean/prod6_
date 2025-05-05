@@ -16,7 +16,6 @@ import {
   orderBy,
   deleteDoc,
   doc,
-  updateDoc,
 } from "firebase/firestore";
 import { useUser } from "@clerk/nextjs";
 import { toast } from "sonner";
@@ -111,7 +110,7 @@ function Notes() {
           {notes.length === 0 ? (
             <p className="text-gray-200">No todos yet.</p>
           ) : (
-            notes.map((note: any) => (
+            notes.map((note) => (
               <div
                 key={note.id}
                 className="border p-4 rounded-lg shadow-sm bg-gray-100 hover:shadow-md transition-all"

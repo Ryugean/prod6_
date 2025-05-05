@@ -6,12 +6,10 @@ import {
   SignedIn,
   SignedOut,
   UserButton,
-  useUser,
+
 } from "@clerk/nextjs";
 
 function Navbar() {
-const {user} = useUser()
-
   return (
     <div className="flex justify-between items-center mt-10 p-3 border-3 rounded-md w-3/4 mx-auto">
       <div className="px-10">

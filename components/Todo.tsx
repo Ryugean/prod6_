@@ -117,7 +117,7 @@ function Todo() {
           {todos.length === 0 ? (
             <p className="text-gray-500">No todos yet.</p>
           ) : (
-            todos.map((todo: any) => (
+            todos.map((todo) => (
               <div
                 key={todo.id}
                 className="border p-4 rounded-lg shadow-sm bg-white hover:shadow-md transition-all"

@@ -44,7 +44,7 @@ function Pomodoro() {
       }, 1000)
     }
     return () => clearInterval(timer);
-  }, [isRunning, seconds, minutes])
+  }, [isRunning, seconds, minutes, isNotBreak])
 
   const handleStart = () => {
     setIsRunning(true);

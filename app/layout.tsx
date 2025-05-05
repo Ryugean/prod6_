@@ -4,11 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import {
   ClerkProvider,
-  SignInButton,
-  SignUpButton,
   SignedIn,
-  SignedOut,
-  UserButton,
 } from '@clerk/nextjs'
 import AuthMessage from "@/components/AuthMsg";
 import { Toaster } from "sonner";
