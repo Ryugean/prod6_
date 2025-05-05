@@ -27,6 +27,7 @@ type Todo = {
   title: string;
   description: string;
   createdAt: Timestamp;
+  completed: boolean;
 };
 
 function Todo() {
@@ -41,10 +42,12 @@ function Todo() {
     setLoading(true);
 
     try {
+      console.log("Adding todo for user ID:", user?.id);
       await addDoc(collection(db, "todos"), {
         userId: user?.id,
         title,
         description: desc,
+        completed: false,
         createdAt: Timestamp.now(),
       });
       setTitle("");
@@ -92,6 +95,8 @@ function Todo() {
       toast("Todo Deleted Successfully...");
     } catch (error) {
       console.error("Error deleting todo: ", error);
+    } finally {
+      setLoading(false); // ✅ Always runs, even on error
     }
   };
 
