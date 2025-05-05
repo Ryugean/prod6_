@@ -1,3 +1,4 @@
+import Notes from "@/components/Notes";
 import Pomodoro from "@/components/Pomodoro";
 import Todo from "@/components/Todo";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <main>
       <Pomodoro />
       <Todo />
+      <Notes />
     </main>
   );
 }

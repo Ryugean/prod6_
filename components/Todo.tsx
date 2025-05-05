@@ -189,7 +189,7 @@ function Todo() {
         <div className="px-5 py-2">
           <Button
             onClick={handleAddTodo}
-            className="bg-gray-800"
+            className="bg-emerald-300 text-gray-900 hover:bg-emerald-700 hover:text-gray-100"
             disabled={loading}
           >
             {loading ? "Adding..." : "Add"}
