@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "../components/Navbar";
+import Navbar from "@/components/Navbar";
 import {
   ClerkProvider,
   SignedIn,
 } from '@clerk/nextjs'
-import AuthMessage from "../components/AuthMsg";
+import AuthMessage from "@/components/AuthMsg";
 import { Toaster } from "sonner";
 
 const geistSans = Geist({
