@@ -5,7 +5,7 @@ import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
 import { useState, useEffect } from "react";
-import { db } from "@/lib/firebase";
+import { db } from "../lib/firebase";
 import {
   collection,
   addDoc,
