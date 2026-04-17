@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 import Notes from "@/components/Notes";
 import Pomodoro from "@/components/Pomodoro";
 import Todo from "@/components/Todo";
